@@ -1,0 +1,13 @@
+train_net: "train.prototxt"
+base_lr: 1e-5
+weight_decay: 0.0005
+lr_policy: "fixed"
+max_iter: 10
+type: "Adam"
+momentum: 0.9
+display: 1
+average_loss: 1
+snapshot: 2000
+snapshot_prefix: "train"
+iter_size: 10
+solver_mode: GPU
