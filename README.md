@@ -1,6 +1,6 @@
 # Deep Object Co-Segmentation (DOCS) - Caffe
 
-This is the [caffe](https://github.com/BVLC/caffe) implementation of our paper **Deep Object Co-Segmentation** published at ACCV18. For more information, you can visit the [project page](https://ohosseini.github.io/projects/DOCS/).
+This is the [**caffe**](https://github.com/BVLC/caffe) implementation of our paper **Deep Object Co-Segmentation** published at ACCV18. For more information, you can visit the [project page](https://ohosseini.github.io/projects/DOCS/). You can also find our **pytorch** version [here](https://github.com/ohosseini/DOCS-pytorch).
 
 ![DOCS Network](_assets/network.png)
 
@@ -13,14 +13,18 @@ This is the [caffe](https://github.com/BVLC/caffe) implementation of our paper *
   conda install -c conda-forge opencv=2.4
   ```
 
-## Compiling Caffe
+## Installation
 
-1. Follow the installation instructions in [caffe official website](http://caffe.berkeleyvision.org/installation.html) for installing the dependencies.
-2. Make a ```Makefile.config``` file using the ```Makefile.config.example```.
-3. Set ```WITH_PYTHON_LAYER := 1``` in ```Makefile.config```.
-4. Then compile it by running
-
+1. Download the code with
     ```console
+    git clone https://github.com/ohosseini/DOCS-caffe.git
+    ```
+2. Follow the installation instructions in [caffe official website](http://caffe.berkeleyvision.org/installation.html) for installing the dependencies.
+3. Make ```Makefile.config file``` using the ```Makefile.config.example.Set```.
+4. Set ```WITH_PYTHON_LAYER := 1``` in ```Makefile.config```.
+5. Finally compile the code by running
+    ```console
+    cd DOCS-coffe
     make all
     make pycaffe
     ```
